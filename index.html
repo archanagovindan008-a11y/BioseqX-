@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BioSeqX - Biological Sequence Analysis</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🧬 BioSeqX</h1>
+        <p>Biological Sequence Analysis Tool</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Welcome to BioSeqX</h2>
+
+            <p>
+                Analyze DNA and protein sequences using a simple
+                and user-friendly interface.
+            </p>
+        </section>
+
+        <section class="analysis-box">
+
+            <h2>DNA Sequence Analysis</h2>
+
+            <label for="dnaSequence">
+                Enter DNA Sequence
+            </label>
+
+            <textarea
+                id="dnaSequence"
+                placeholder="Example: ATGCGATAGCCG"
+            ></textarea>
+
+            <button id="analyzeButton">
+                Analyze Sequence
+            </button>
+
+            <button id="clearButton">
+    🧹 Clear
+</button>
+            <div class="analysis-options">
+
+    <button id="dnaAnalysisButton">
+        🧬 DNA Analysis
+    </button>
+
+    <button id="proteinAnalysisButton">
+        🧪 Protein Analysis
+    </button>
+
+    <button id="translateButton">
+        🔄 Translate DNA → Protein
+    </button>
+
+    <button id="orfAnalysisButton">
+        🧬 ORF Analysis
+    </button>
+
+    <button id="tmAnalysisButton">
+        🌡️ Tm Analysis
+    </button>
+
+</div>
+
+        </section>
+
+        <section id="results" class="results">
+
+    <h2>Analysis Results</h2>
+
+    <div id="resultCards" class="result-cards">
+
+        <div class="result-card">
+            <h3>Sequence</h3>
+            <p id="resultSequence">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>Length</h3>
+            <p id="resultLength">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>A Count</h3>
+            <p id="resultA">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>T Count</h3>
+            <p id="resultT">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>G Count</h3>
+            <p id="resultG">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>C Count</h3>
+            <p id="resultC">-</p>
+        </div>
+
+        <div class="result-card">
+            <h3>GC Content</h3>
+            <p id="resultGC">-</p>
+        </div>
+
+    </div>
+
+</section>
+
+    </main>
+
+    <footer>
+        <p>BioSeqX | Python-Based Biological Sequence Analysis Tool</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
