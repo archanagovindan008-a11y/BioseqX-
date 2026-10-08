@@ -1,11 +1,11 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
-from modules.protein_tools import protein_sequence
-from modules.orf_tools import find_orf
-from modules.tm_tools import melting_temperature
+from protein_tools import protein_sequence
+from orf_tools import find_orf
+from tm_tools import melting_temperature
 
-from modules.dna_tools import (
+from dna_tools import (
     base_count,
     gc_count,
     nucleotide_percentage,
