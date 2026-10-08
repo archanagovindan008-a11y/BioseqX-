@@ -1,4 +1,4 @@
-from modules.dna_tools import (
+from dna_tools import (
     base_count,
     gc_count,
     nucleotide_percentage,
@@ -8,20 +8,20 @@ from modules.dna_tools import (
 )
 
 
-from modules.protein_tools import(protein_sequence,protein_validation)
+from protein_tools import(protein_sequence,protein_validation)
 
 
-from modules.sequence_length import(sequence_length)
+from sequence_length import(sequence_length)
 
-from modules.dna_weights import(dna_molecular_weight)
+from dna_weights import(dna_molecular_weight)
 
-from modules.orf_tools import(find_orf)
-from modules.fasta_tools import export_fasta,read_fasta
-from modules.result_tools import save_result
-from modules.tm_tools import melting_temperature
-from modules.csv_tools import save_csv
-from modules.quality_tools import sequence_quality
-from modules.summary_tools import analysis_summary
+from orf_tools import(find_orf)
+from fasta_tools import export_fasta,read_fasta
+from result_tools import save_result
+from tm_tools import melting_temperature
+from csv_tools import save_csv
+from quality_tools import sequence_quality
+from summary_tools import analysis_summary
 
 print("================================")
 print("       Welcome to BioSeqX")
